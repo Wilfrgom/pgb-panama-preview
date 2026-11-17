@@ -426,7 +426,6 @@ def course_grid(cards, *, cols, label):
 def training_hub_page():
     iata_n, pgb_n = len(IATA_ORDER), 1 + len(FIRST_AID)
     body = f"""
-<section class="page-banner page-banner--short" style="background-image:url('assets/1Mesa-de-trabajo-1-scaled.webp')"></section>
 <section class="section container narrow-head">
   <p class="eyebrow reveal">Centro de Entrenamiento</p>
   <h1 class="reveal">Formación certificada para el sector logístico y aeroportuario</h1>
