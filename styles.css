@@ -56,10 +56,11 @@ h1,h2,h3,h4,h5,h6{font-family:var(--head);font-weight:500;line-height:1.18;lette
 .hero__titles{position:absolute;z-index:3;left:max(32px,calc((100% - 1320px)/2 + 8px));top:49%;transform:translateY(-50%);color:#fff;max-width:900px;display:grid}
 .hero__title{grid-area:1/1;margin:0;font-family:var(--head);font-size:clamp(38px,5.14vw,74px);font-weight:500;line-height:.92;letter-spacing:0;pointer-events:none}
 .hero__title.is-active{pointer-events:auto}
-.hero__title .line{display:block;overflow:hidden;padding-bottom:.1em;margin-bottom:-.1em}
-.hero__title .line>span{display:block;transform:translateY(120%);transition:transform .3s cubic-bezier(.33,1,.68,1)}
+.hero__title .line{display:block;overflow:hidden;padding-bottom:.22em;margin-bottom:-.22em}
+.hero__title .line+.line{margin-top:0}
+.hero__title .line>span{display:block;transform:translateY(140%);transition:transform .3s cubic-bezier(.33,1,.68,1)}
 .hero__title.is-active .line>span{transform:translateY(0)}
-.hero__title.is-leaving .line>span{transform:translateY(-120%)}
+.hero__title.is-leaving .line>span{transform:translateY(-140%)}
 .hero__title .line:nth-child(2)>span{transition-delay:.04s}
 .hero__title .line:nth-child(3)>span{transition-delay:.08s}
 .hero__title .line:nth-child(4)>span{transition-delay:.12s}
